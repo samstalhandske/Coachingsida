@@ -6,12 +6,17 @@
     padding: 0%;
 }
 
+html
+{
+    height:100%;
+}
 body
 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 32px;
 
     background-color: #1E1E24;
+    height:100%;
 }
 
 .logo
@@ -34,13 +39,20 @@ header{
     padding: 16px 32px;
 
     background-image: linear-gradient(rgba(0, 0, 0, 255),rgba(0, 0, 0, 0));
+    user-select: none;
 }
 
 .container
 {
     /* background-color: red; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
 
-    min-height: 50rem;
+    margin: 48px 30%;
+
+    color: #F1FFFA;
 }
 
 .nav_links
@@ -60,3 +72,16 @@ header{
 {
     color: #F1FFFA;
 }
+
+footer
+{
+    margin-top: 20rem;
+    min-height: 10rem;
+    background-color: #FFBA08;
+}
+
+@media only screen and (max-width: 1920px) {
+    .container {
+        font-size: 24px;
+    }
+  }
