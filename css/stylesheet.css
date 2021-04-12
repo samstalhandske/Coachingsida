@@ -38,7 +38,7 @@ header{
 
 .container
 {
-    background-color: red;
+    /* background-color: red; */
 
     min-height: 50rem;
 }
