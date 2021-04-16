@@ -39,7 +39,6 @@ body
     margin-right: 16px;
 }
 
-
 li,a,h1,h2
 {
     color:#FFBA08;
@@ -69,13 +68,15 @@ header{
 }
 .nav_links li:hover
 {
-    /* color: #F1FFFA; */
     transform: scale(105%);
-
 }
 
 footer
 {
-    min-height: 10rem;
-    /* background-color: #FFBA08; */
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    color: #FFBA08;
+
+    font-size: 16px;
 }
