@@ -19,11 +19,26 @@ body
     height:100%;
 }
 
+.logo_container
+{
+    display: flex;
+    align-items: center;
+
+    transition: 100ms ease;
+}
+.logo_container:hover
+{
+    transform: scale(105%);
+}
+
 .logo
 {
-    width:64px;
+    width: 64px;
     height: 64px;
+    
+    margin-right: 16px;
 }
+
 
 li,a,h1,h2
 {
@@ -40,12 +55,6 @@ header{
 
     background-image: linear-gradient(rgba(0, 0, 0, 255),rgba(0, 0, 0, 0));
     user-select: none;
-    background-color: yellow;
-}
-
-.nav_bar
-{
-    background-color: blue;
 }
 
 .nav_links
@@ -56,14 +65,13 @@ header{
 .nav_links li {
     display: inline-block;
     padding: 0px 16px;
-}
-.nav_links li a
-{
     transition: 100ms ease;
 }
-.nav_links li a:hover
+.nav_links li:hover
 {
-    color: #F1FFFA;
+    /* color: #F1FFFA; */
+    transform: scale(105%);
+
 }
 
 footer
