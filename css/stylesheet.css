@@ -28,6 +28,9 @@ body
 }
 .logo_container:hover
 {
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -o-transform: scale(105%);
     transform: scale(105%);
 }
 
@@ -68,6 +71,9 @@ header{
 }
 .nav_links li:hover
 {
+    -webkit-transform: scale(105%);
+    -moz-transform: scale(105%);
+    -o-transform: scale(105%);
     transform: scale(105%);
 }
 
