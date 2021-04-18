@@ -4,6 +4,8 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    color:#FFBA08;
+    text-decoration: none;
 }
 
 html
@@ -41,13 +43,6 @@ body
     
     margin-right: 16px;
 }
-
-li,a,h1,h2
-{
-    color:#FFBA08;
-    text-decoration: none;
-}
-
 
 header{
     display: flex;
@@ -89,18 +84,27 @@ header{
 
 .landing_page_reviews
 {
-    padding-top: 64px;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    background-color: blue;
 }
 .landing_page_review_item
 {
     display: flex;
+    justify-content: center;
+    align-content: center;
 
-    background-color: red;
+    /* background-color: red; */
+    margin-top: 64px;
+    width: 100%;
+}
+
+.landing_page_review_item img{
+    max-width: 25%;
+    border: 1px rgb(255, 196, 0) solid;
+}
+.landing_page_review_item p{
+    text-align: center;
+    background-color: blue;
 }
 
 footer
