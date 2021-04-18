@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen"/>
     <link rel="shortcut icon" href="images/helm-with-no-cap.png" type="image/png">
     <title>Coaching Service - TSTRENGTH</title>
@@ -13,7 +14,7 @@
     <header>
         <div class="logo_container">
             <a href="#"><img class="logo" src="images/tlogga.svg" alt="logo"></a>
-            <h2><a href="#">TStrength</a></h2>
+            <a href="#">TStrength</a>
         </div>
 
         <nav class="nav_bar">
@@ -33,14 +34,27 @@
 
         <div class="landing_page_reviews">
             <div class="landing_page_review_item">
-                <img src="images/viktorBefore.jpg">
                 <p>"10/10 gave me steroids!"</p>
+                <div class="w3-content w3-display-container" id="slideshow1" style="max-width:100%">
+                    <img class="mySlides" src="images/viktorBefore.jpg">
+                    <img class="mySlides" src="images/viktorAfter.jpg">
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%;">
+                        <div class="w3-left w3-hover-text-khaki" style="scale: 3; color: #F1FFFA;" onclick="plusSlides(-1, 1)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" style="scale: 3; color: #F1FFFA;" onclick="plusSlides(1, 1)">&#10095;</div>
+                    </div>
+                </div>
             </div>
             <div class="landing_page_review_item">
+                <div class="w3-content w3-display-container" id="slideshow2" style="max-width:100%">
+                    <img class="mySlides" src="images/viktorBefore.jpg">
+                    <img class="mySlides" src="images/viktorAfter.jpg">
+                    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%;">
+                        <div class="w3-left w3-hover-text-khaki" style="scale: 3; color: #F1FFFA;" onclick="plusSlides(-1, 2)">&#10094;</div>
+                        <div class="w3-right w3-hover-text-khaki" style="scale: 3; color: #F1FFFA;" onclick="plusSlides(1, 2)">&#10095;</div>
+                    </div>
+                </div>
                 <p>"10/10 gave me steroids!"</p>
-                <img src="images/viktorBefore.jpg">
             </div>
-
         </div>
     </div>
 
@@ -48,6 +62,34 @@
     <footer>
         <a href="https://samstalhandske.github.io/webrutan/">powered by webrutan.se</a>
     </footer>
+
+    <script>
+        var slideshow1 = document.getElementById("slideshow1");
+        slideshow1.currentIndex = 1;
+        showSlides(slideshow1.currentIndex, slideshow1);
+
+        var slideshow2 = document.getElementById("slideshow2");
+        slideshow2.currentIndex = 1;
+        showSlides(slideshow2.currentIndex, slideshow2);
+        
+        function plusSlides(n, slideShowID) {
+
+            var currentSlideshow = document.getElementById("slideshow" + slideShowID);
+            showSlides(currentSlideshow.currentIndex += n, currentSlideshow);
+        }
+
+        function showSlides(n, slideShow) {
+            var i;
+            var slides = slideShow.getElementsByClassName("mySlides");
+
+            if (n > slides.length) {slideShow.currentIndex = 1}
+            if (n < 1) {slideShow.currentIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideShow.currentIndex-1].style.display = "block";  
+        }
+    </script>
 </body>
 
 </html>

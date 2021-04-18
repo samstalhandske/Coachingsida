@@ -6,6 +6,7 @@
     padding: 0%;
     color:#FFBA08;
     text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 html
@@ -14,9 +15,7 @@ html
 }
 body
 {
-    font-family: 'Bebas Neue', sans-serif;
     font-size: 32px;
-
     background-color: #1E1E24;
     height:100%;
 }
@@ -92,31 +91,31 @@ header{
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
 
     /* background-color: red; */
     margin-top: 64px;
     width: 100%;
 }
 
-.landing_page_review_item img{
-    max-width: 25%;
+.mySlides{
     border: 1px rgb(255, 196, 0) solid;
 }
 .landing_page_review_item p{
     text-align: center;
-    background-color: blue;
+    background-color: blue; 
 }
 
 footer
 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-
+    
     width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
     color: #FFBA08;
 
-    font-size: 20px;
+    font-size: 16px;
 }
