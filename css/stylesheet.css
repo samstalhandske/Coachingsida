@@ -48,6 +48,7 @@ li,a,h1,h2
     text-decoration: none;
 }
 
+
 header{
     display: flex;
     justify-content: space-between;
@@ -84,5 +85,42 @@ footer
     justify-content: center;
     color: #FFBA08;
 
-    font-size: 16px;
+    font-size: 35px;
 }
+
+.parent {
+    position: relative;
+    top: 0;
+    left 0;
+}
+.image1 {
+    position: relative;
+    top: 0;
+    left 0;
+    border: 2px rgb(255, 196, 0) solid;
+}
+.image2 {
+position: absolute;
+width: 300px;
+height: 300px;
+top: 100px;
+left: 830px;
+}
+
+.logo-text {
+    position: absolute;
+    width: 300px;
+height: 300px;
+top: 420px;
+left: 845px;
+}
+.info-text{
+    font-size: 30px;
+    position: absolute;
+    width: 300px;
+height: 300px;
+top: 490px;
+left: 845px;
+color: #F1FFFA;
+}
+
