@@ -78,49 +78,41 @@ header{
     transform: scale(105%);
 }
 
+.landing_page_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px rgb(255, 196, 0) solid;
+    width: 100%;
+}
+
+.landing_page_reviews
+{
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: blue;
+}
+.landing_page_review_item
+{
+    display: flex;
+
+    background-color: red;
+}
+
 footer
 {
-    min-height: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-content: center;
     color: #FFBA08;
 
-    font-size: 35px;
+    font-size: 20px;
 }
-
-.parent {
-    position: relative;
-    top: 0;
-    left 0;
-}
-.image1 {
-    position: relative;
-    top: 0;
-    left 0;
-    border: 2px rgb(255, 196, 0) solid;
-}
-.image2 {
-position: absolute;
-width: 300px;
-height: 300px;
-top: 100px;
-left: 830px;
-}
-
-.logo-text {
-    position: absolute;
-    width: 300px;
-height: 300px;
-top: 420px;
-left: 845px;
-}
-.info-text{
-    font-size: 30px;
-    position: absolute;
-    width: 300px;
-height: 300px;
-top: 490px;
-left: 845px;
-color: #F1FFFA;
-}
-
