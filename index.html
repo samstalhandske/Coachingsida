@@ -1,102 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen"/>
-    <link rel="shortcut icon" href="images/helm-with-no-cap.png" type="image/png">
-    <title>Coaching Service - TSTRENGTH</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+  <link rel="shortcut icon" href="images/helm-with-no-cap.png" type="image/png">
+  <title>Coaching Service - TSTRENGTH</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo_container">
-            <a href="#"><img class="logo" src="images/tlogga.svg" alt="logo"></a>
-            <h2><a href="#">TStrength</a></h2>
-        </div>
-
-        <nav class="nav_bar">
-            <ul class="nav_links">
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="landing_page">
-      <div class="landing_page_image">
-        <img src="images/landing.png" />
-      </div>
+  <header>
+    <div class="logo_container">
+      <a href="#"><img class="logo" src="images/tlogga.svg" alt="logo"></a>
+      <h2><a href="#">TStrength</a></h2>
     </div>
-    
-    <div class="slideshow-container-ception">
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
-          <div class="text">Before</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <img src="images/viktorAfter.jpg" border="1" style="width: 100%">
-            <div class="text">After</div>
-        </div>
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-         <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
-       <br>
 
+    <nav class="nav_bar">
+      <ul class="nav_links">
+        <li><a href="/aboutme.html">About Me</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="landing_page">
+    <div class="landing_page_image">
+      <img src="images/landing.png" />
+    </div>
+  </div>
+
+  <div class="slideshow-container-ception">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
+        <div class="text">Before</div>
       </div>
 
-      <div class="slideshow-container-ception">
-        <div class="slideshow-container">
-          <div class="mySlides2 fade">
-            <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
-            <div class="text">Before</div>
-          </div>
-          
-          <div class="mySlides2 fade">
-            <img src="images/viktorAfter.jpg" border="1" style="width: 100%">
-              <div class="text">After</div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-           <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
-         <br>
+      <div class="mySlides fade">
+        <img src="images/viktorAfter.jpg" border="1" style="width: 100%">
+        <div class="text">After</div>
+      </div>
+      <a class="prev" onclick="plusSlides(0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(0)">&#10095;</a>
+    </div>
+    <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
 
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+
+  </div>
+
+  <div class="slideshow-container-ception">
+    <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
+        <div class="text">Before</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/viktorAfter.jpg" border="1" style="width: 100%">
+        <div class="text">After</div>
+      </div>
+      <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+
+  </div>
+
+  <script>
+
+    var slides = document.getElementsByClassName("mySlides"); 
+    slides[0].style.display = "block";
+    slides[1].style.display = "none";
+    slides[2].style.display = "block";
+    slides[3].style.display = "none";
+    var currentPic = 0;
+
+
+
+
+
+    function plusSlides(picIndex) {
+
+      currentPic++;
+      currentPic = currentPic % 2; //currentPic will be 0 or 1
+
+      for (var i = 0; i < slides.length; i++) { //i represents picture group
+
+        if (i == picIndex) { //checks which picture you want to change by index
+          showSlides(currentPic + 2 * i); //sends 
         }
-      
-        slides[slideIndex-1].style.display = "block";  
       }
-      </script>
 
 
-    <footer>
-        <a href="https://samstalhandske.github.io/webrutan/">powered by webrutan.se</a>
-    </footer>
+
+    }
+
+    function currentSlide(n) { //does nothing atm
+      showSlides(slideIndex = n);
+    }
+
+    /**
+     * Function that displays the picture depending on the index
+     * @param currentPic index of the picture you want to show
+    */
+    function showSlides(currentPic) {
+
+      for (var i = 0; i < slides.length; i++) {
+
+        if (i == currentPic) { 
+
+          if ((i % 2) == 0) { //even numbers
+
+            slides[currentPic + 1].style.display = "none";
+            slides[currentPic].style.display = "block";
+
+          } 
+          if ((i % 2) == 1) { //uneven numbers
+
+            slides[currentPic].style.display = "block";
+            slides[currentPic - 1].style.display = "none";
+
+          }
+        }
+
+      }
+
+    }
+
+  </script>
+
+
+  <footer>
+    <a href="https://samstalhandske.github.io/webrutan/">powered by webrutan.se</a>
+  </footer>
 </body>
 
 </html>
