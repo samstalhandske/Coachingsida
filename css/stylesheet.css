@@ -126,7 +126,18 @@ footer
     flex-direction: column;
     justify-content: center;
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 0%;
+    width: 33%;
+    position: relative;
+
+}
+
+.slideshow-container-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-right: 0%;
     width: 33%;
     position: relative;
 
@@ -135,9 +146,16 @@ footer
 .slideshow-container-ception{
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    background-color:rgba(0, 0, 0, 0.8);
+    justify-content: center;
 
+}
+
+.text-container{
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mySlides {
@@ -179,6 +197,8 @@ footer
     width: 50%;
     text-align: center;
   }
+
+
 .reviewtext-Viktor{
     position: relative;
     margin-top: 10%;
@@ -186,6 +206,16 @@ footer
     color: #f2f2f2;
     font-size: 2.5vw;
 }
+
+.reviewtext-Second{
+    position: relative;
+    text-align: right;
+    margin-top: 10%;
+    margin-right: 15%;
+    color: #f2f2f2;
+    font-size: 2.5vw;
+}
+
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -201,6 +231,15 @@ footer
     animation-name: fade;
     animation-duration: 1.5s;
   }
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
   @-webkit-keyframes fade {
     from {opacity: .4}
