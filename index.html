@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <!-- First slideshow review-->
+  <!--The number in "plusSlides" represents the "group picture index"-->
   <div class="slideshow-container-ception">
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -53,7 +53,6 @@
 
   </div>
 
-    <!-- Second slideshow review-->
   <div class="slideshow-container-ception">
     <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
     <div class="slideshow-container">
@@ -69,10 +68,11 @@
       <a class="prev" onclick="plusSlides(1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-  </div>
 
-  <!-- Third slideshow review-->
+
+  </div>
   <div class="slideshow-container-ception">
+    
     <div class="slideshow-container">
       <div class="mySlides fade">
         <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
@@ -87,37 +87,51 @@
       <a class="next" onclick="plusSlides(2)">&#10095;</a>
     </div>
     <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
+
+
   </div>
+  
 
   <script>
 
-    var slides = document.getElementsByClassName("mySlides"); 
-      for (var i = 0; i < slides.length; i++) {
+    var slides = document.getElementsByClassName("mySlides");
+    var currentPic = new Array(slides.length / 2);
 
-        if ((i % 2) == 0) {
-         slides[i].style.display = "block";
+    for (var i = 0; i < currentPic.length; i++) {
+      currentPic[i] = 0;
+    }
 
-        }
-        if ((i % 2) == 1) {
-          slides[i].style.display = "none";
-        }
+
+    for (var i = 0; i < slides.length; i++) {
+
+      if ((i % 2) == 0) { 
+        slides[i].style.display = "block";
+
+      }
+      if ((i % 2) == 1) {
+        slides[i].style.display = "none";
       }
 
-    var currentPic = 0;
+    }
+    
+  
+
+    /**
+     * Function that calculates the index of the picture
+     * @param picIndex is the index of the "picture group"
+    */
     function plusSlides(picIndex) {
 
-      currentPic++;
-      currentPic = currentPic % 2; //currentPic will be 0 or 1
+       
+      currentPic[picIndex]++;
+      currentPic[picIndex] = currentPic[picIndex] % 2; //currentPic will be 0 or 1
 
-      for (var i = 0; i < slides.length; i++) { //i represents picture group
+      for (var group = 0; group < slides.length; group++) {
 
-        if (i == picIndex) { //checks which picture you want to change by index
-          showSlides(currentPic + 2 * i); //sends 
+        if (group == picIndex) { //checks which picture you want to change by index
+          showSlides(currentPic[picIndex] + 2 * group);
         }
       }
-
-
-
     }
 
     function currentSlide(n) { //does nothing atm
@@ -132,14 +146,14 @@
 
       for (var i = 0; i < slides.length; i++) {
 
-        if (i == currentPic) { 
+        if (i == currentPic) {
 
           if ((i % 2) == 0) { //even numbers
 
             slides[currentPic + 1].style.display = "none";
             slides[currentPic].style.display = "block";
 
-          } 
+          }
           if ((i % 2) == 1) { //uneven numbers
 
             slides[currentPic].style.display = "block";
