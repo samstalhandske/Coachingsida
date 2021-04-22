@@ -34,148 +34,36 @@
     </div>
   </div>
 
-  <!--The number in "plusSlides" represents the "group picture index"-->
-   <!-- First slideshow review-->
-  <div class="slideshow-container-ception">
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
-        <div class="text">Before</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/viktorAfter.jpg" border="1" style="width: 100%">
-        <div class="text">After</div>
-      </div>
-      <a class="prev" onclick="plusSlides(0)">&#10094;</a>
-      <a class="next" onclick="plusSlides(0)">&#10095;</a>
+  <div class="content_container">
+    <div class="text-container">
+      <h1>Why get a coach?</h1>
+      <p>Having a coach as a beginner lets you skip all the newbie form and programming issues. Everyone I began training with spent the first year or two getting lackluster results as we slowly learned.</p><br>
+      <p>Equipment quality questions? Ask coach. Pin pointing a weak point? Ask coach. Rehabbing an injury? Ask coach. Diet questions? Ask coach. Program questions? Coach. Water cut? Coach. Cardio? Coach. Need a spot on bench day? Coach.</p><br>
+      <p>Simply put; anyone who wants to maximize return on the time they invest into training as a beginner/intermediate should have a coach.</p>
     </div>
-    <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
-  </div>
-
-  <!-- Second slideshow review -->
-  <div class="slideshow-container-ception">
-    <div class="reviewtext-Second"> </div>
-    <div class="reviewtext-Second">He spoon fed me trenbolone 10/100</div>
-    <div class="slideshow-container-two">
-      <div class="mySlides fade">
-        <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
-        <div class="text">Before</div>
+    <div class="image-container">
+      <div class="image-container-row">
+        <img src="images/viktorBefore.jpg">
+        <img src="images/viktorAfter.jpg">
       </div>
-
-      <div class="mySlides fade">
-        <img src="images/viktorAfter.jpg" border="1" style="width: 100%">
-        <div class="text">After</div>
+      <div class="image-container-row">
+        <img src="images/helm-with-no-cap.png">
+        <img src="images/helm-with-no-cap.png">
+        <img src="images/helm-with-no-cap.png">
       </div>
-      <a class="prev" onclick="plusSlides(1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="image-container-row">
+        <img src="images/helm-with-no-cap.png">
+        <img src="images/helm-with-no-cap.png">
+        <img src="images/helm-with-no-cap.png">
+      </div>
     </div>
   </div>
 
-  <!-- Third slideshow review -->
-  <div class="slideshow-container-ception">
-    
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <img src="images/viktorBefore.jpg" border="1" style="width: 100%">
-        <div class="text">Before</div>
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/viktorAfter.jpg" border="1" style="width: 100%">
-        <div class="text">After</div>
-      </div>
-      <a class="prev" onclick="plusSlides(2)">&#10094;</a>
-      <a class="next" onclick="plusSlides(2)">&#10095;</a>
-    </div>
-    <div class="reviewtext-Viktor">He spoon fed me trenbolone 10/10</div>
-  </div>
-
-  <div class="text-container">
-    <h2>Why get a coach?</h2>
-    <h3 style="color: #F1FFFA;" >Here I try to persuade you you dumb fuck </h3>
-    <a style="margin-top: 3vw;" href="https://samstalhandske.github.io/webrutan/" >powered by webrutan.se</a>
-  </div>
-  
   <footer>
-    <a href="#" class="fa fa-instagram"></a>
+    <div class="footer_content">
+      <a href="https://www.instagram.com/tomicstrength/" class="fa fa-instagram"></a>
+    </div>
   </footer>
-
-  <script>
-
-    var slides = document.getElementsByClassName("mySlides");
-    var currentPic = new Array(slides.length / 2);
-
-    for (var i = 0; i < currentPic.length; i++) {
-      currentPic[i] = 0;
-    }
-
-
-    for (var i = 0; i < slides.length; i++) {
-
-      if ((i % 2) == 0) { 
-        slides[i].style.display = "block";
-
-      }
-      if ((i % 2) == 1) {
-        slides[i].style.display = "none";
-      }
-
-    }
-    
-  
-
-    /**
-     * Function that calculates the index of the picture
-     * @param picIndex is the index of the "picture group"
-    */
-    function plusSlides(picIndex) {
-
-       
-      currentPic[picIndex]++;
-      currentPic[picIndex] = currentPic[picIndex] % 2; //currentPic will be 0 or 1
-
-      for (var group = 0; group < slides.length; group++) {
-
-        if (group == picIndex) { //checks which picture you want to change by index
-          showSlides(currentPic[picIndex] + 2 * group);
-        }
-      }
-    }
-
-    function currentSlide(n) { //does nothing atm
-      showSlides(slideIndex = n);
-    }
-
-    /**
-     * Function that displays the picture depending on the index
-     * @param currentPic index of the picture you want to show
-    */
-    function showSlides(currentPic) {
-
-      for (var i = 0; i < slides.length; i++) {
-
-        if (i == currentPic) {
-
-          if ((i % 2) == 0) { //even numbers
-
-            slides[currentPic + 1].style.display = "none";
-            slides[currentPic].style.display = "block";
-
-          }
-          if ((i % 2) == 1) { //uneven numbers
-
-            slides[currentPic].style.display = "block";
-            slides[currentPic - 1].style.display = "none";
-
-          }
-        }
-
-      }
-
-    }
-
-  </script>
 
 </body>
 
