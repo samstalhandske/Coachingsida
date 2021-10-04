@@ -173,3 +173,20 @@ footer
 {
     color: var(--background-color);
 }
+
+#testimonialText1 {
+    float: left;
+} 
+
+#testimonialText2 {
+    color: white;
+    float: left;
+}
+
+#testimonialText3 {
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: monospace;
+    color: white;
+    float: left;
+}
