@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* @media screen and (max-width: 481px) {
+    header {
+        float: left;
+        font-size: 15px;
+    } 
+} */
+
 *{
     box-sizing: border-box;
     margin: 0%;
@@ -10,7 +17,7 @@
 
 :root{
     --primary-color: #FFBA08;
-    --secondary-color: #F1FFFA;
+    --secondary-color: #F1FFFA; 
     --background-color: #1E1E24;
 }
 
@@ -83,12 +90,12 @@ header
 {
     margin-bottom: 50px;
 }
-.landing_page_image
+
+#landing_image
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     border: 1px var(--primary-color) solid;
     width: 100%;
 }
@@ -97,12 +104,13 @@ header
 {
     display: block;
     /* background-color: chocolate; */
-    max-width: 50vw;
+    /* max-width: 50vw; */
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20vh;
 }
-.text-container
+.whyCoachContainer
 {
     text-align: center;
     justify-content: center;
@@ -114,33 +122,29 @@ header
     /* background-color: gray; */
     letter-spacing: 2px;
 }
-.text-container h1
+.whyCoachContainer h1
 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
-.text-container p
+.whyCoachContainer p
 {
     color: var(--secondary-color);
+    font-family: monospace;
 }
 
-.image-container
-{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* background-color: red; */
-}
 .image-container-row
 {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    
 }
 
 .image-container-row img
 {
-    width: 100%;
-    padding: 10px 10px;
+    width: 80%;
+    /* padding: 10px 10px; */
 }
 
 footer
@@ -174,7 +178,57 @@ footer
     color: var(--background-color);
 }
 
-#testimonialText1 {
+
+.floatLeft {
+    float: left;
+    padding-left: 1%;
+}
+
+.testWhite{
+    color: white;
+}
+
+.testLongText {
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.testimonialContainer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.testimonial {
+    margin-bottom: 50px;
+}
+
+.testimonialName {
+display: flex;
+}
+
+.testimonialName a{
+    margin-right: 10px;
+}
+
+.testimonialName label {
+    color: var(--secondary-color);
+}
+
+.testimonialDesc {
+    font-family: monospace;
+    display: flex;
+    font-size: 25px;
+}
+
+.testimonialDesc p {
+    color: var(--secondary-color);
+}
+
+/* #testimonialText1 {
     float: left;
 } 
 
@@ -189,8 +243,9 @@ footer
     font-family: monospace;
     color: white;
     float: left;
+} */
+
+#boastList {
+    font-family: monospace;
 }
 
-#lastAbout {
-    padding-bottom: 50px;
-}
